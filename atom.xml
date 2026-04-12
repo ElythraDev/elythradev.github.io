@@ -10,23 +10,21 @@
   <rights>All rights reserved 2026, Elythra</rights>
   <subtitle>黄昏下空无一人的站台，只剩下无尽的孤寂。</subtitle>
   <title>Elythra's Blog</title>
-  <updated>2026-04-12T04:09:24.928Z</updated>
+  <updated>2026-04-12T15:15:24.028Z</updated>
   <entry>
     <author>
       <name>Elythra</name>
     </author>
-    <category term="全新体验" scheme="https://elythradev.github.io/categories/%E5%85%A8%E6%96%B0%E4%BD%93%E9%AA%8C/"/>
-    <category term="欢迎" scheme="https://elythradev.github.io/tags/%E6%AC%A2%E8%BF%8E/"/>
+    <category term="HELLO" scheme="https://elythradev.github.io/categories/HELLO/"/>
+    <category term="问候" scheme="https://elythradev.github.io/tags/%E9%97%AE%E5%80%99/"/>
     <content>
-      <![CDATA[<p>欢迎使用 <code>Kratos : Rebirth</code> 这个我们精心打造的 Hexo 主题！希望能在接下来的旅途中与您相伴，共同创造出更多难以忘怀的美好体验。</p>]]>
+      <![CDATA[<p>我向世界那端的你问好。</p><!--more--><p>这里是我的站点，亦是一个你和我的世界。</p><p>我在这里会发布一些自己的想法，分享一些技术类的东西，或者记一点笔记，还有发发牢骚。</p><p>如果你喜欢这里，可以多停留一会儿。</p><p>也可以成为我的朋友。</p><p>—— 2026-4-12 Elythra向你问好。</p>]]>
     </content>
     <id>https://elythradev.github.io/posts/hello-world.html</id>
     <link href="https://elythradev.github.io/posts/hello-world.html"/>
     <published>2018-05-06T09:03:12.000Z</published>
-    <summary>
-      <![CDATA[<p>欢迎使用 <code>Kratos : Rebirth</code> 这个我们精心打造的 Hexo 主题！希望能在接下来的旅途中与您相伴，共同创造出更多难以忘怀的美好体验。</p>]]>
-    </summary>
-    <title>你好，世界！</title>
-    <updated>2026-04-12T04:09:24.928Z</updated>
+    <summary>我向世界那端的你问好。 这里是我的站点，亦是一个你和我的世界。 我在这里会发布一些自己的想法，分享一些技术类的东西，或者记一点笔记，还有发发牢骚。 如果你喜欢这里，可以多停留一会儿。 也可以成为我的朋友。 —— 2026-4-12 Elythra向你问好。</summary>
+    <title>向世界那端的你问好。</title>
+    <updated>2026-04-12T15:15:24.028Z</updated>
   </entry>
 </feed>
