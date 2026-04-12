@@ -29,16 +29,16 @@ nav:
       url: /archives/
     - label: 链接
       icon: link
-      submenu:
-        - label: 代码仓库
-          icon: code
-          url: https://github.com/Candinya/Kratos-Rebirth
-        - label: 项目文档
-          icon: book
-          url: https://wiki.krt.moe
+#      submenu:
+#        - label: 代码仓库
+#          icon: code
+#          url: https://github.com/Candinya/Kratos-Rebirth
+#        - label: 项目文档
+#          icon: book
+#          url: https://wiki.krt.moe
     - label: 友情链接
       icon: link
-      url: /linklist-example/
+      url: /link/
       # float_right: true
 
 # Footer 页脚配置
@@ -88,9 +88,9 @@ donate:
   enable: true
   title: "赞助喵"
   message: 非常感谢您的喜欢！ <i class="fa fa-heart" style="color:#d43f57"></i>
-  qrcode_placeholder: "https://dev.krt.moe/demo-assets/donate.webp"
+  qrcode_placeholder: "https://elythradev.github.io/ElythraDev/26/4_942374065_b0e6e4eab95b378ec71b1a8470d6cfa5.png"
   platforms:
-    - name: "模拟支付"
+    - name: "WX PAY"
       icon: "credit-card"
       color: "skyblue"
       qrcode: "example_payment"
