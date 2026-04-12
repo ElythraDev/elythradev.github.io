@@ -1,7 +1,5 @@
-# GitHub Actions 配置文件：用于自动部署 Hexo 博客
 name: Deploy Hexo
 
-# 当 main 分支被 push 时触发部署流程
 on:
   push:
     branches:
@@ -9,54 +7,34 @@ on:
 
 jobs:
   deploy:
-    # 使用最新版 Ubuntu 运行环境
     runs-on: ubuntu-latest
-
-    # 允许对仓库内容进行写操作（git push）
     permissions:
       contents: write
 
     steps:
-      # Step 1：检出仓库源码
       - uses: actions/checkout@v4
 
-      # Step 2：设置 Node.js 环境
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: 20  # 建议用 20 LTS，更稳定
 
-      # Step 3：安装依赖
       - name: Install dependencies
         run: npm install
 
-      # Step 4：生成 Hexo 静态文件
       - name: Generate Hexo static files
         run: npx hexo generate
 
-      # Step 4.5: 沃日了怎么还要安装git??
-      - name: Install Developer Git
+      - name: Install hexo-deployer-git
         run: npm install hexo-deployer-git --save
 
-      # 关键步骤：配置 SSH
-      - name: Setup SSH Key
+      - name: Configure Git
         run: |
-          mkdir -p ~/.ssh/
-          echo "${{ secrets.HEXO_DEPLOY_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git config --global user.email "e.lythra@qq.com"
+          git config --global user.name "ElythraDev"
 
-      # Step 4.7: qnmd怎么还有git设置
-      - name: set fking git
-        run: git config --global user.email "e.lythra@qq.com"
-
-      # Step 4.7: qnmd怎么还有git设置
-      - name: set fking git2
-        run: git config --global user.name "ElythraDev"
-                
-
-      # Step 5：PUSH!
-      - name: Generate Hexo static files
+      - name: Deploy to GitHub
         run: |
-          git remote set-url origin https://ElythraDev:${{ secrets.GITHUB_TOKEN }}@github.com:ElythraDev/elythradev.github.io.git
-          npx hexo d
+          # 修正：github.com/ 后面是斜杠，不是冒号
+          git remote set-url origin https://ElythraDev:${{ secrets.GITHUB_TOKEN }}@github.com/ElythraDev/elythradev.github.io.git
+          npx hexo deploy
