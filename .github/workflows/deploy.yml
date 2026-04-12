@@ -31,10 +31,14 @@ jobs:
 
       - name: Deploy to GitHub
         env:
+          # GitHub Actions 会自动识别这个环境变量来处理 https 认证
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # 使用包含 token 的 URL 覆盖部署配置，避免交互式密码输入
+          npm install hexo-deployer-git --save
+          
           npx hexo clean
           npx hexo generate
-          # 直接在运行命令时动态注入地址，安全且高效
+          
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/ElythraDev/elythradev.github.io.git
+          
           npx hexo deploy
