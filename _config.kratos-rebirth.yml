@@ -106,28 +106,29 @@ copyright_notice:
 comments:
   core:
     enable_at:
-    # - index
+      - index
       - post
       - page
     template:
       _shared: ""
       index: ""
-      post: ""
-      page: ""
+      post: <div id="w-comments" class="kr-comments" data-path="$PATH"></div>
+      page: <div id="w-comments" class="kr-comments" data-path="$PATH"></div>
   count:
-    enable_at: []
-    # - index
-    # - post
+    enable_at:
+      - index
+      - post
     template:
-      _shared: ""
+      _shared: <span data-path="$PATH" class="waline-comment-count"> </span>
       index: ""
       post: ""
 
-# 访问数量统计
 visit_count:
-  enable_at: []
+  enable_at:
+    - index
+    - post
   template:
-    _shared: ""
+    _shared: <span data-path="$PATH" class="waline-pageview-count"> </span>
     index: ""
     post: ""
 
