@@ -34,6 +34,10 @@ jobs:
       - name: Generate Hexo static files
         run: npx hexo generate
 
+      # Step 4.5: 沃日了怎么还要安装git??
+      - name: Install Developer Git
+        run: npm install hexo-deployer-git --save
+
       # Step 5：PUSH!
       - name: Generate Hexo static files
         run: npx hexo d
