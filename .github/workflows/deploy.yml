@@ -37,4 +37,13 @@ jobs:
           npm install hexo-deployer-git --save
           npx hexo clean
           npx hexo generate
-          npx hexo deploy
+
+            # Step 5：部署到 gh-pages 分支
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./public
+          user_name: ElythraDev
+          user_email: e.lythra@qq.com
