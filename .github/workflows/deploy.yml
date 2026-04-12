@@ -17,13 +17,12 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'npm' # 开启缓存加速安装
+          node-version: 24
 
       - name: Install dependencies
         run: |
           npm install
-          npm install hexo-deployer-git --save # 确保插件已安装
+          npm install hexo-deployer-git --save
 
       - name: Configure Git
         run: |
@@ -32,7 +31,6 @@ jobs:
 
       - name: Deploy to GitHub
         env:
-          # 核心：将环境变量暴露给 hexo 进程
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # 使用包含 token 的 URL 覆盖部署配置，避免交互式密码输入
