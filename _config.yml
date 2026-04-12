@@ -126,5 +126,5 @@ sitemap:
 deploy:
   type: git
   repo: https://github.com/ElythraDev/elythradev.github.io # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
-  branch: main
+  branch: master
   message: updateblog
