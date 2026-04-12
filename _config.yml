@@ -125,6 +125,6 @@ sitemap:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/ElythraDev/elythradev.github.io # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
+  repo: git@github.com:ElythraDev/blog-source-code.git
   branch: master
   message: updateblog
