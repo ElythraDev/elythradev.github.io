@@ -57,4 +57,6 @@ jobs:
 
       # Step 5：PUSH!
       - name: Generate Hexo static files
-        run: npx hexo d
+        run: |
+          git remote set-url origin https://ElythraDev:${{ secrets.GITHUB_TOKEN }}@github.com:ElythraDev/elythradev.github.io.git
+          npx hexo d
