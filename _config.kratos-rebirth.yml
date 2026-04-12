@@ -89,11 +89,6 @@ donate:
   title: "赞助喵"
   message: 非常感谢您的喜欢！ <i class="fa fa-heart" style="color:#d43f57"></i>
   qrcode_placeholder: "https://elythradev.github.io/ElythraDev/26/4_942374065_b0e6e4eab95b378ec71b1a8470d6cfa5.png"
-  platforms:
-    - name: "WX PAY"
-      icon: "credit-card"
-      color: "skyblue"
-      qrcode: "example_payment"
 
 # 版权说明
 copyright_notice:
