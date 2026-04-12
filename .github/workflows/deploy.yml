@@ -35,10 +35,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm install hexo-deployer-git --save
-          
           npx hexo clean
           npx hexo generate
-          
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/ElythraDev/elythradev.github.io.git
-          
           npx hexo deploy
