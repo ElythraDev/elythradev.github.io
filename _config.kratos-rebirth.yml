@@ -10,7 +10,7 @@ search:
 # 图片配置
 image:
   favicon: "/assets/favicon.png" # 站点图标
-  #avatar: "/assets/logo.webp" # 个人信息挂件上的头像
+  avatar: "https://q.qlogo.cn/g?b=qq&nk=3773328720&s=640" # 个人信息挂件上的头像
   banner:
     light: "https://dev.krt.moe/demo-assets/banner.webp"
     dark: "https://dev.krt.moe/demo-assets/banner_dark.webp"
@@ -36,7 +36,7 @@ nav:
         - label: 项目文档
           icon: book
           url: https://wiki.krt.moe
-    - label: 链接列表
+    - label: 友情链接
       icon: link
       url: /linklist-example/
       # float_right: true
@@ -45,13 +45,13 @@ nav:
 footer:
   links:
     - icon: github
-      link: https://github.com/kratos-rebirth
+      link: https://github.com/ElythraDev
     - icon: rss
       link: /atom.xml
   components:
     uptime:
-      since: "2018/05/06 17:03:12"
-      text: "本站已在风雨中飘摇"
+      since: "2026/04/12 11:17:00"
+      text: "自本站诞生以来"
     author:
       homepage: "https://github.com/Candinya/Kratos-Rebirth/graphs/contributors"
     additional: # 托管信息等
@@ -59,8 +59,8 @@ footer:
         - 在 <a href="https://github.io" target="_blank">Github Pages</a> 暖心托管
 
 # 代码高亮
-# syntax_highlighter:
-#   theme: atom-dark # 代码高亮主题（请参照具体的高亮插件对应的主题样式）
+syntax_highlighter:
+  theme: atom-dark # 代码高亮主题（请参照具体的高亮插件对应的主题样式）
 
 # Widgets 侧边栏小挂件
 sidebar:

@@ -3,21 +3,24 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 'Kratos : Rebirth'
-subtitle: '一个可爱而现代的 Hexo 主题'
-description: '欢迎使用这个主题，希望能给您带来美好的体验。'
+title: "Elythra's Blog"
+subtitle: '黄昏下空无一人的站台，只剩下无尽的孤寂。'
+description: '记录一些听过的风，记忆中的碎片，以及一些不成体系的想法。'
 keywords: 
-- hexo
-- theme
-- kratos-rebirth
+- Elythra
+- 科技博客
+- 个人博客
+- Developer
+- PHP
+- JS
 author: All contributors
 language: zh
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://krt.moe
-permalink: posts/:title/
+url: https://elythradev.github.io
+permalink: posts/:title.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
