@@ -38,6 +38,15 @@ jobs:
       - name: Install Developer Git
         run: npm install hexo-deployer-git --save
 
+      # Step 4.7: qnmd怎么还有git设置
+      - name: set fking git
+        run: git config --global user.email "e.lythra@qq.com"
+
+      # Step 4.7: qnmd怎么还有git设置
+      - name: set fking git2
+        run: git config --global user.name "ElythraDev"
+                
+
       # Step 5：PUSH!
       - name: Generate Hexo static files
         run: npx hexo d
