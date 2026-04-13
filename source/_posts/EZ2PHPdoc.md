@@ -9,7 +9,7 @@ share: true
 tags: []
 title: title
 toc: true
-updated: '2026-04-13T23:10:42.048+08:00'
+updated: '2026-04-13T23:11:58.428+08:00'
 ---
 # 🚀 EZ2PHP
 
@@ -38,7 +38,7 @@ updated: '2026-04-13T23:10:42.048+08:00'
 
 * **方式一**：使用 Git Clone 到本地。
   ```bash
-  git clone [https://github.com/ElythraDev/EZ2PHP.git](https://github.com/ElythraDev/EZ2PHP.git)
+  git clone https://github.com/ElythraDev/EZ2PHP.git
   ```
 * **方式二**：直接下载源码解压至 Web 目录。
 
