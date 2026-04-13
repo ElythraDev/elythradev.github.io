@@ -5,16 +5,24 @@ categories:
 comments: true
 date: '2026-04-13T23:05:53.580924+08:00'
 donate: true
-excerpt: 🚀 EZ2PHP  An SUPER simple PHP Framework. &gt; 专为“懒人”设计的轻量级 MVC 解决方案，拒绝反复复制粘贴。  ---（本文档由AI优化过） 📖 简介 EZ2PHP 正如其名（Easy to PHP），是为了在处理中小型项目时，既能享受 MVC 模式的清晰结构，又不愿被庞大框架的复杂度困扰而诞生的。 ✨ 项目特性  极致轻量：仅包含目录结构、视图渲...
+excerpt: （本文档由AI优化过） 📖 简介 EZ2PHP 正如其名（Easy to PHP），是为了在处理中小型项目时，既能享受 MVC 模式的清晰结构，又不愿被庞大框架的复杂度困扰而诞生的。 ✨ 项目特性  极致轻量：仅包含目录结构、视图渲... share: true tags:  PHP PHP框架 EZ2PHP title: EZ2PHP 中文文档 toc: true updated: '2026...
+tags: []
+title: ''
+updated: '2026-04-13T23:15:35.933+08:00'
+---
+（本文档由AI优化过） 📖 简介 EZ2PHP 正如其名（Easy to PHP），是为了在处理中小型项目时，既能享受 MVC 模式的清晰结构，又不愿被庞大框架的复杂度困扰而诞生的。 ✨ 项目特性  极致轻量：仅包含目录结构、视图渲...
 share: true
 tags:
+
 - PHP
 - PHP框架
 - EZ2PHP
-title: EZ2PHP 中文文档
-toc: true
-updated: '2026-04-13T23:13:03.687+08:00'
+  title: EZ2PHP 中文文档
+  toc: true
+  updated: '2026-04-13T23:13:03.687+08:00'
+
 ---
+
 # 🚀 EZ2PHP
 
 > **An SUPER simple PHP Framework.** > 专为“懒人”设计的轻量级 MVC 解决方案，拒绝反复复制粘贴。
@@ -68,11 +76,6 @@ server {
     location / {
         try_files $uri $uri/ /index.php$is_args$args;
     }
-
-    # 保护核心目录不被直接访问
-    location ~ ^/(lib|pages|templates) {
-        deny all;
-    }
 }
 ```
 
@@ -82,14 +85,15 @@ server {
 
 EZ2PHP 的结构非常直观：
 
-| 目录/文件 | 描述 |
-| :--- | :--- |
-| `/lib` | 存储核心 LIB 文件（如视图类等） |
-| `/pages` | **控制器**：处理具体的页面业务逻辑 |
-| `/public` | 访客入口及静态资源（JS/CSS/IMG）存放地 |
-| `/templates` | **视图模板**：HTML 结构文件 |
-| `router.php` | 路由配置文件 |
-| `config.php` | 全局配置文件 |
+
+| 目录/文件    | 描述                                   |
+| :----------- | :------------------------------------- |
+| `/lib`       | 存储核心 LIB 文件（如视图类等）        |
+| `/pages`     | **控制器**：处理具体的页面业务逻辑     |
+| `/public`    | 访客入口及静态资源（JS/CSS/IMG）存放地 |
+| `/templates` | **视图模板**：HTML 结构文件            |
+| `router.php` | 路由配置文件                           |
+| `config.php` | 全局配置文件                           |
 
 > 💡 **提示**：`/pages` 默认缺省 `404.php`，你可以参照 `sample.php` 快速编写一个。
 
@@ -190,4 +194,3 @@ Code with love. 如果你在使用中遇到任何问题，欢迎通过 GitHub Is
 ---
 
 **Maintained by [Elythra](https://github.com/ElythraDev)**
-
