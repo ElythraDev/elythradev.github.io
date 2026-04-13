@@ -1,14 +1,18 @@
 ---
-abbrlink: ''
+abbrlink: ez2phpchndoc
 categories:
 - - 文档
 comments: true
 date: '2026-04-13T23:05:53.580924+08:00'
 donate: true
 excerpt: （本文档由AI优化过） 📖 简介 EZ2PHP 正如其名（Easy to PHP），是为了在处理中小型项目时，既能享受 MVC 模式的清晰结构，又不愿被庞大框架的复杂度困扰而诞生的。 ✨ 项目特性  极致轻量：仅包含目录结构、视图渲... share: true tags:  PHP PHP框架 EZ2PHP title: EZ2PHP 中文文档 toc: true updated: '2026...
-tags: []
-title: ''
-updated: '2026-04-13T23:15:35.933+08:00'
+tags:
+- PHP
+- EZ2PHP
+- PHP框架
+- MVC
+title: EZ2PHP 中文文档
+updated: '2026-04-13T23:18:47.089+08:00'
 ---
 （本文档由AI优化过） 📖 简介 EZ2PHP 正如其名（Easy to PHP），是为了在处理中小型项目时，既能享受 MVC 模式的清晰结构，又不愿被庞大框架的复杂度困扰而诞生的。 ✨ 项目特性  极致轻量：仅包含目录结构、视图渲...
 share: true
